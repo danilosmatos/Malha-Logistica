@@ -1,10 +1,10 @@
-# Otimizador de Malha Logística 📦🚚
+# Otimizador de Malha Logística
 
 Este projeto foi desenvolvido como parte dos requisitos acadêmicos para a disciplina de Estrutura de Dados. O objetivo principal é implementar um sistema inteligente capaz de despachar encomendas otimizando rotas, organizando pacotes de forma eficiente e comparando o consumo de recursos computacionais através de estruturas de dados customizadas, **sem o uso de bibliotecas nativas** para a lógica central.
 
 ---
 
-## 👥 Membros do Projeto
+## Membros do Projeto
 [Antônio Gabriel](https://github.com/Anton-Gabriel-code)
 
 [Danilo Soares](https://github.com/danilosmatos)
@@ -16,7 +16,7 @@ Este projeto foi desenvolvido como parte dos requisitos acadêmicos para a disci
 
 ---
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 Seguindo o padrão obrigatório estabelecido, o projeto está organizado da seguinte forma:
 
