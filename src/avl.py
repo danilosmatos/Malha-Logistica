@@ -25,7 +25,6 @@ class ArvoreAVL:
         no.altura = 1 + max(self._altura(no.esquerda), self._altura(no.direita))
 
     def rotacionar_direita(self, y):
-        """Rotação simples à direita (LL -> balanceado)."""
         x = y.esquerda
         t2 = x.direita
 
@@ -37,7 +36,6 @@ class ArvoreAVL:
         return x
 
     def rotacionar_esquerda(self, x):
-        """Rotação simples à esquerda (RR -> balanceado)."""
         y = x.direita
         t2 = y.esquerda
 
@@ -81,23 +79,31 @@ class ArvoreAVL:
 
         return self._balancear(no)
 
-    def buscar(self, valor):
-        no = self._buscar(self.raiz, valor)
-        if no is None:
-            return None
-        return no.encomenda if no.encomenda is not None else no.valor
+    def carregar_encomendas(self, encomendas):
+        for encomenda in encomendas:
+            self.inserir(encomenda["id"], encomenda)
 
-    def _buscar(self, no, valor):
+    def buscar(self, valor):
+        no = self._buscar(valor)
         if no is None:
             return None
-        if valor == no.valor:
-            return no
-        if valor < no.valor:
-            return self._buscar(no.esquerda, valor)
-        return self._buscar(no.direita, valor)
+        return self._formatar_no(no)
+
+    def _buscar(self, valor):
+        atual = self.raiz
+        while atual is not None:
+            if valor == atual.valor:
+                return atual
+            if valor < atual.valor:
+                atual = atual.esquerda
+            else:
+                atual = atual.direita
+        return None
 
     def remover(self, valor):
+        existe = self._buscar(valor) is not None
         self.raiz = self._remover(self.raiz, valor)
+        return existe
 
     def _remover(self, no, valor):
         if no is None:
@@ -127,7 +133,6 @@ class ArvoreAVL:
         return atual
 
     def listar(self):
-        """Retorna IDs em ordem crescente (in-order)."""
         resultado = []
         self._inorder(self.raiz, resultado)
         return resultado
@@ -140,30 +145,43 @@ class ArvoreAVL:
         self._inorder(no.direita, resultado)
 
     def recomendar(self, valor_referencia):
-        """Recomenda a encomenda com ID mais próximo ao valor informado."""
         no = self._recomendar(self.raiz, valor_referencia)
         if no is None:
             return None
-        return {
-            "id": no.valor,
-            "encomenda": no.encomenda,
-            "distancia": abs(no.valor - valor_referencia),
-        }
+        resultado = dict(self._formatar_no(no))
+        resultado["distancia"] = abs(no.valor - valor_referencia)
+        return resultado
 
     def _recomendar(self, no, valor_referencia, melhor=None):
         if no is None:
             return melhor
 
-        if melhor is None or abs(no.valor - valor_referencia) < abs(
-            melhor.valor - valor_referencia
-        ):
+        dist_atual = abs(no.valor - valor_referencia)
+        if melhor is None:
             melhor = no
+        else:
+            dist_melhor = abs(melhor.valor - valor_referencia)
+            if dist_atual < dist_melhor or (
+                dist_atual == dist_melhor and no.valor < melhor.valor
+            ):
+                melhor = no
 
         if valor_referencia < no.valor:
             return self._recomendar(no.esquerda, valor_referencia, melhor)
         if valor_referencia > no.valor:
             return self._recomendar(no.direita, valor_referencia, melhor)
         return no
+
+    def _formatar_no(self, no):
+        if no.encomenda is not None:
+            return no.encomenda
+        return {"id": no.valor}
+
+    def vazia(self):
+        return self.raiz is None
+
+    def tamanho(self):
+        return len(self.listar())
 
     def imprimir(self):
         ids = self.listar()
