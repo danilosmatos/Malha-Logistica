@@ -1,22 +1,38 @@
-﻿from grafo import Grafo
+def menor_caminho_bfs(grafo, origem, destino):
+    """Retorna o menor caminho entre origem e destino pelo número de baldeações."""
+    if origem == destino:
+        return [origem]
 
-def bfs(grafo, no1):
-    visitados = []
-    fila = [no1]
-    visitados.append(no1)
+    visitados = set()
+    fila = [origem]
+    anterior = {origem: None}
+    inicio_fila = 0
+    visitados.add(origem)
 
-    ordem_visita = []
+    while inicio_fila < len(fila):
+        atual = fila[inicio_fila]
+        inicio_fila += 1
 
-    while len(fila) > 0:
-        no_atual  = fila.pop(0)
-
-        ordem_visita.append(no_atual)
-
-        for vizinho in grafo.vizinhos[no_atual]:
+        for vizinho in grafo.obter_vizinhos(atual):
             if vizinho not in visitados:
-                visitados.append(vizinho)
+                visitados.add(vizinho)
+                anterior[vizinho] = atual
+
+                if vizinho == destino:
+                    return reconstruir_caminho(anterior, destino)
+
                 fila.append(vizinho)
-    print(" -> ".join(ordem_visita))
 
-    return visitados
+    return []
 
+
+def reconstruir_caminho(anterior, destino):
+    caminho = []
+    atual = destino
+
+    while atual is not None:
+        caminho.append(atual)
+        atual = anterior[atual]
+
+    caminho.reverse()
+    return caminho
