@@ -1,9 +1,12 @@
 {
     "metadata": {
         "cenario": "basico",
+        "seed": 42,
         "total_encomendas": 10,
         "total_cidades": 5,
-        "total_rotas": 4
+        "total_rotas": 4,
+        "total_consultas": 10,
+        "grafo_direcionado": false
     },
     "cidades": [
         "Cidade_0",
@@ -37,53 +40,65 @@
     "encomendas": [
         {
             "id": 100000,
-            "cidade_origem": "Cidade_1",
-            "cidade_destino": "Cidade_0"
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_4"
         },
         {
             "id": 100001,
-            "cidade_origem": "Cidade_1",
-            "cidade_destino": "Cidade_3"
+            "cidade_origem": "Cidade_2",
+            "cidade_destino": "Cidade_1"
         },
         {
             "id": 100002,
             "cidade_origem": "Cidade_1",
-            "cidade_destino": "Cidade_2"
+            "cidade_destino": "Cidade_4"
         },
         {
             "id": 100003,
-            "cidade_origem": "Cidade_1",
-            "cidade_destino": "Cidade_2"
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_4"
         },
         {
             "id": 100004,
-            "cidade_origem": "Cidade_0",
-            "cidade_destino": "Cidade_3"
-        },
-        {
-            "id": 100005,
-            "cidade_origem": "Cidade_2",
-            "cidade_destino": "Cidade_3"
-        },
-        {
-            "id": 100006,
             "cidade_origem": "Cidade_4",
             "cidade_destino": "Cidade_3"
         },
         {
+            "id": 100005,
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_4"
+        },
+        {
+            "id": 100006,
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_1"
+        },
+        {
             "id": 100007,
-            "cidade_origem": "Cidade_3",
+            "cidade_origem": "Cidade_1",
             "cidade_destino": "Cidade_0"
         },
         {
             "id": 100008,
             "cidade_origem": "Cidade_4",
-            "cidade_destino": "Cidade_2"
+            "cidade_destino": "Cidade_1"
         },
         {
             "id": 100009,
-            "cidade_origem": "Cidade_1",
+            "cidade_origem": "Cidade_4",
             "cidade_destino": "Cidade_3"
         }
+    ],
+    "consultas_rotas": [
+        100000,
+        100001,
+        100002,
+        100003,
+        100004,
+        100005,
+        100006,
+        100007,
+        100008,
+        100009
     ]
 }

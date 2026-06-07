@@ -1,0 +1,1388 @@
+{
+    "status": "OK",
+    "cenario": "estresse",
+    "avl": {
+        "total_encomendas": 50000,
+        "altura": 16,
+        "primeiros_ids_em_ordem": [
+            100000,
+            100001,
+            100002,
+            100003,
+            100004,
+            100005,
+            100006,
+            100007,
+            100008,
+            100009
+        ]
+    },
+    "grafo": {
+        "total_cidades": 1000,
+        "total_rotas_arquivo": 3978,
+        "total_arestas_unicas": 3978,
+        "matriz_construida": true
+    },
+    "rotas_calculadas": [
+        {
+            "id_encomenda": 100000,
+            "encontrada": true,
+            "origem": "Cidade_497",
+            "destino": "Cidade_525",
+            "caminho": [
+                "Cidade_497",
+                "Cidade_607",
+                "Cidade_525"
+            ],
+            "baldeacoes": 2
+        },
+        {
+            "id_encomenda": 100001,
+            "encontrada": true,
+            "origem": "Cidade_605",
+            "destino": "Cidade_742",
+            "caminho": [
+                "Cidade_605",
+                "Cidade_484",
+                "Cidade_246",
+                "Cidade_511",
+                "Cidade_742"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100002,
+            "encontrada": true,
+            "origem": "Cidade_626",
+            "destino": "Cidade_957",
+            "caminho": [
+                "Cidade_626",
+                "Cidade_961",
+                "Cidade_367",
+                "Cidade_957"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100003,
+            "encontrada": true,
+            "origem": "Cidade_694",
+            "destino": "Cidade_926",
+            "caminho": [
+                "Cidade_694",
+                "Cidade_571",
+                "Cidade_572",
+                "Cidade_512",
+                "Cidade_926"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100004,
+            "encontrada": true,
+            "origem": "Cidade_836",
+            "destino": "Cidade_888",
+            "caminho": [
+                "Cidade_836",
+                "Cidade_888"
+            ],
+            "baldeacoes": 1
+        },
+        {
+            "id_encomenda": 100005,
+            "encontrada": true,
+            "origem": "Cidade_499",
+            "destino": "Cidade_237",
+            "caminho": [
+                "Cidade_499",
+                "Cidade_500",
+                "Cidade_171",
+                "Cidade_64",
+                "Cidade_237"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100006,
+            "encontrada": true,
+            "origem": "Cidade_731",
+            "destino": "Cidade_62",
+            "caminho": [
+                "Cidade_731",
+                "Cidade_730",
+                "Cidade_396",
+                "Cidade_571",
+                "Cidade_570",
+                "Cidade_62"
+            ],
+            "baldeacoes": 5
+        },
+        {
+            "id_encomenda": 100007,
+            "encontrada": true,
+            "origem": "Cidade_540",
+            "destino": "Cidade_19",
+            "caminho": [
+                "Cidade_540",
+                "Cidade_539",
+                "Cidade_20",
+                "Cidade_19"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100008,
+            "encontrada": true,
+            "origem": "Cidade_432",
+            "destino": "Cidade_590",
+            "caminho": [
+                "Cidade_432",
+                "Cidade_431",
+                "Cidade_819",
+                "Cidade_782",
+                "Cidade_590"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100009,
+            "encontrada": true,
+            "origem": "Cidade_323",
+            "destino": "Cidade_566",
+            "caminho": [
+                "Cidade_323",
+                "Cidade_705",
+                "Cidade_61",
+                "Cidade_62",
+                "Cidade_566"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100010,
+            "encontrada": true,
+            "origem": "Cidade_65",
+            "destino": "Cidade_274",
+            "caminho": [
+                "Cidade_65",
+                "Cidade_90",
+                "Cidade_190",
+                "Cidade_959",
+                "Cidade_274"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100011,
+            "encontrada": true,
+            "origem": "Cidade_914",
+            "destino": "Cidade_663",
+            "caminho": [
+                "Cidade_914",
+                "Cidade_168",
+                "Cidade_111",
+                "Cidade_663"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100012,
+            "encontrada": true,
+            "origem": "Cidade_427",
+            "destino": "Cidade_910",
+            "caminho": [
+                "Cidade_427",
+                "Cidade_428",
+                "Cidade_540",
+                "Cidade_910"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100013,
+            "encontrada": true,
+            "origem": "Cidade_484",
+            "destino": "Cidade_119",
+            "caminho": [
+                "Cidade_484",
+                "Cidade_246",
+                "Cidade_353",
+                "Cidade_838",
+                "Cidade_119"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100014,
+            "encontrada": true,
+            "origem": "Cidade_506",
+            "destino": "Cidade_637",
+            "caminho": [
+                "Cidade_506",
+                "Cidade_507",
+                "Cidade_953",
+                "Cidade_757",
+                "Cidade_637"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100015,
+            "encontrada": true,
+            "origem": "Cidade_961",
+            "destino": "Cidade_661",
+            "caminho": [
+                "Cidade_961",
+                "Cidade_367",
+                "Cidade_302",
+                "Cidade_661"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100016,
+            "encontrada": true,
+            "origem": "Cidade_355",
+            "destino": "Cidade_459",
+            "caminho": [
+                "Cidade_355",
+                "Cidade_356",
+                "Cidade_556",
+                "Cidade_555",
+                "Cidade_459"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100017,
+            "encontrada": true,
+            "origem": "Cidade_714",
+            "destino": "Cidade_446",
+            "caminho": [
+                "Cidade_714",
+                "Cidade_968",
+                "Cidade_629",
+                "Cidade_445",
+                "Cidade_446"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100018,
+            "encontrada": true,
+            "origem": "Cidade_21",
+            "destino": "Cidade_165",
+            "caminho": [
+                "Cidade_21",
+                "Cidade_22",
+                "Cidade_602",
+                "Cidade_243",
+                "Cidade_165"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100019,
+            "encontrada": true,
+            "origem": "Cidade_294",
+            "destino": "Cidade_743",
+            "caminho": [
+                "Cidade_294",
+                "Cidade_293",
+                "Cidade_292",
+                "Cidade_291",
+                "Cidade_743"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100020,
+            "encontrada": true,
+            "origem": "Cidade_196",
+            "destino": "Cidade_480",
+            "caminho": [
+                "Cidade_196",
+                "Cidade_197",
+                "Cidade_36",
+                "Cidade_481",
+                "Cidade_480"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100021,
+            "encontrada": true,
+            "origem": "Cidade_352",
+            "destino": "Cidade_448",
+            "caminho": [
+                "Cidade_352",
+                "Cidade_353",
+                "Cidade_838",
+                "Cidade_535",
+                "Cidade_448"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100022,
+            "encontrada": true,
+            "origem": "Cidade_237",
+            "destino": "Cidade_519",
+            "caminho": [
+                "Cidade_237",
+                "Cidade_238",
+                "Cidade_57",
+                "Cidade_518",
+                "Cidade_519"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100023,
+            "encontrada": true,
+            "origem": "Cidade_224",
+            "destino": "Cidade_601",
+            "caminho": [
+                "Cidade_224",
+                "Cidade_223",
+                "Cidade_559",
+                "Cidade_374",
+                "Cidade_601"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100024,
+            "encontrada": true,
+            "origem": "Cidade_930",
+            "destino": "Cidade_701",
+            "caminho": [
+                "Cidade_930",
+                "Cidade_460",
+                "Cidade_461",
+                "Cidade_331",
+                "Cidade_701"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100025,
+            "encontrada": true,
+            "origem": "Cidade_347",
+            "destino": "Cidade_943",
+            "caminho": [
+                "Cidade_347",
+                "Cidade_943"
+            ],
+            "baldeacoes": 1
+        },
+        {
+            "id_encomenda": 100026,
+            "encontrada": true,
+            "origem": "Cidade_616",
+            "destino": "Cidade_873",
+            "caminho": [
+                "Cidade_616",
+                "Cidade_321",
+                "Cidade_385",
+                "Cidade_873"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100027,
+            "encontrada": true,
+            "origem": "Cidade_862",
+            "destino": "Cidade_732",
+            "caminho": [
+                "Cidade_862",
+                "Cidade_861",
+                "Cidade_916",
+                "Cidade_433",
+                "Cidade_732"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100028,
+            "encontrada": true,
+            "origem": "Cidade_672",
+            "destino": "Cidade_479",
+            "caminho": [
+                "Cidade_672",
+                "Cidade_673",
+                "Cidade_674",
+                "Cidade_175",
+                "Cidade_820",
+                "Cidade_479"
+            ],
+            "baldeacoes": 5
+        },
+        {
+            "id_encomenda": 100029,
+            "encontrada": true,
+            "origem": "Cidade_134",
+            "destino": "Cidade_904",
+            "caminho": [
+                "Cidade_134",
+                "Cidade_135",
+                "Cidade_396",
+                "Cidade_106",
+                "Cidade_904"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100030,
+            "encontrada": true,
+            "origem": "Cidade_300",
+            "destino": "Cidade_740",
+            "caminho": [
+                "Cidade_300",
+                "Cidade_37",
+                "Cidade_741",
+                "Cidade_740"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100031,
+            "encontrada": true,
+            "origem": "Cidade_728",
+            "destino": "Cidade_399",
+            "caminho": [
+                "Cidade_728",
+                "Cidade_729",
+                "Cidade_757",
+                "Cidade_398",
+                "Cidade_399"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100032,
+            "encontrada": true,
+            "origem": "Cidade_982",
+            "destino": "Cidade_426",
+            "caminho": [
+                "Cidade_982",
+                "Cidade_981",
+                "Cidade_979",
+                "Cidade_426"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100033,
+            "encontrada": true,
+            "origem": "Cidade_853",
+            "destino": "Cidade_963",
+            "caminho": [
+                "Cidade_853",
+                "Cidade_775",
+                "Cidade_159",
+                "Cidade_797",
+                "Cidade_963"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100034,
+            "encontrada": true,
+            "origem": "Cidade_689",
+            "destino": "Cidade_668",
+            "caminho": [
+                "Cidade_689",
+                "Cidade_690",
+                "Cidade_765",
+                "Cidade_668"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100035,
+            "encontrada": true,
+            "origem": "Cidade_752",
+            "destino": "Cidade_368",
+            "caminho": [
+                "Cidade_752",
+                "Cidade_298",
+                "Cidade_668",
+                "Cidade_56",
+                "Cidade_368"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100036,
+            "encontrada": true,
+            "origem": "Cidade_815",
+            "destino": "Cidade_483",
+            "caminho": [
+                "Cidade_815",
+                "Cidade_816",
+                "Cidade_251",
+                "Cidade_483"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100037,
+            "encontrada": true,
+            "origem": "Cidade_818",
+            "destino": "Cidade_994",
+            "caminho": [
+                "Cidade_818",
+                "Cidade_630",
+                "Cidade_884",
+                "Cidade_994"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100038,
+            "encontrada": true,
+            "origem": "Cidade_864",
+            "destino": "Cidade_165",
+            "caminho": [
+                "Cidade_864",
+                "Cidade_863",
+                "Cidade_402",
+                "Cidade_166",
+                "Cidade_165"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100039,
+            "encontrada": true,
+            "origem": "Cidade_636",
+            "destino": "Cidade_212",
+            "caminho": [
+                "Cidade_636",
+                "Cidade_637",
+                "Cidade_620",
+                "Cidade_621",
+                "Cidade_147",
+                "Cidade_212"
+            ],
+            "baldeacoes": 5
+        },
+        {
+            "id_encomenda": 100040,
+            "encontrada": true,
+            "origem": "Cidade_289",
+            "destino": "Cidade_707",
+            "caminho": [
+                "Cidade_289",
+                "Cidade_288",
+                "Cidade_706",
+                "Cidade_707"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100041,
+            "encontrada": true,
+            "origem": "Cidade_767",
+            "destino": "Cidade_88",
+            "caminho": [
+                "Cidade_767",
+                "Cidade_766",
+                "Cidade_770",
+                "Cidade_436",
+                "Cidade_88"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100042,
+            "encontrada": true,
+            "origem": "Cidade_683",
+            "destino": "Cidade_494",
+            "caminho": [
+                "Cidade_683",
+                "Cidade_682",
+                "Cidade_681",
+                "Cidade_533",
+                "Cidade_494"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100043,
+            "encontrada": true,
+            "origem": "Cidade_132",
+            "destino": "Cidade_177",
+            "caminho": [
+                "Cidade_132",
+                "Cidade_179",
+                "Cidade_178",
+                "Cidade_177"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100044,
+            "encontrada": true,
+            "origem": "Cidade_204",
+            "destino": "Cidade_160",
+            "caminho": [
+                "Cidade_204",
+                "Cidade_203",
+                "Cidade_268",
+                "Cidade_485",
+                "Cidade_160"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100045,
+            "encontrada": true,
+            "origem": "Cidade_620",
+            "destino": "Cidade_503",
+            "caminho": [
+                "Cidade_620",
+                "Cidade_619",
+                "Cidade_660",
+                "Cidade_503"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100046,
+            "encontrada": true,
+            "origem": "Cidade_103",
+            "destino": "Cidade_812",
+            "caminho": [
+                "Cidade_103",
+                "Cidade_102",
+                "Cidade_101",
+                "Cidade_812"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100047,
+            "encontrada": true,
+            "origem": "Cidade_425",
+            "destino": "Cidade_965",
+            "caminho": [
+                "Cidade_425",
+                "Cidade_424",
+                "Cidade_642",
+                "Cidade_643",
+                "Cidade_965"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100048,
+            "encontrada": true,
+            "origem": "Cidade_505",
+            "destino": "Cidade_310",
+            "caminho": [
+                "Cidade_505",
+                "Cidade_504",
+                "Cidade_311",
+                "Cidade_310"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100049,
+            "encontrada": true,
+            "origem": "Cidade_240",
+            "destino": "Cidade_214",
+            "caminho": [
+                "Cidade_240",
+                "Cidade_338",
+                "Cidade_830",
+                "Cidade_214"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100050,
+            "encontrada": true,
+            "origem": "Cidade_570",
+            "destino": "Cidade_48",
+            "caminho": [
+                "Cidade_570",
+                "Cidade_571",
+                "Cidade_305",
+                "Cidade_304",
+                "Cidade_48"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100051,
+            "encontrada": true,
+            "origem": "Cidade_18",
+            "destino": "Cidade_367",
+            "caminho": [
+                "Cidade_18",
+                "Cidade_195",
+                "Cidade_676",
+                "Cidade_302",
+                "Cidade_367"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100052,
+            "encontrada": true,
+            "origem": "Cidade_902",
+            "destino": "Cidade_267",
+            "caminho": [
+                "Cidade_902",
+                "Cidade_306",
+                "Cidade_9",
+                "Cidade_974",
+                "Cidade_267"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100053,
+            "encontrada": true,
+            "origem": "Cidade_365",
+            "destino": "Cidade_693",
+            "caminho": [
+                "Cidade_365",
+                "Cidade_364",
+                "Cidade_631",
+                "Cidade_692",
+                "Cidade_693"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100054,
+            "encontrada": true,
+            "origem": "Cidade_162",
+            "destino": "Cidade_178",
+            "caminho": [
+                "Cidade_162",
+                "Cidade_161",
+                "Cidade_160",
+                "Cidade_618",
+                "Cidade_178"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100055,
+            "encontrada": true,
+            "origem": "Cidade_847",
+            "destino": "Cidade_880",
+            "caminho": [
+                "Cidade_847",
+                "Cidade_846",
+                "Cidade_467",
+                "Cidade_466",
+                "Cidade_880"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100056,
+            "encontrada": true,
+            "origem": "Cidade_915",
+            "destino": "Cidade_515",
+            "caminho": [
+                "Cidade_915",
+                "Cidade_556",
+                "Cidade_555",
+                "Cidade_515"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100057,
+            "encontrada": true,
+            "origem": "Cidade_32",
+            "destino": "Cidade_826",
+            "caminho": [
+                "Cidade_32",
+                "Cidade_828",
+                "Cidade_827",
+                "Cidade_826"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100058,
+            "encontrada": true,
+            "origem": "Cidade_65",
+            "destino": "Cidade_345",
+            "caminho": [
+                "Cidade_65",
+                "Cidade_64",
+                "Cidade_343",
+                "Cidade_344",
+                "Cidade_345"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100059,
+            "encontrada": true,
+            "origem": "Cidade_440",
+            "destino": "Cidade_116",
+            "caminho": [
+                "Cidade_440",
+                "Cidade_353",
+                "Cidade_703",
+                "Cidade_702",
+                "Cidade_116"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100060,
+            "encontrada": true,
+            "origem": "Cidade_632",
+            "destino": "Cidade_232",
+            "caminho": [
+                "Cidade_632",
+                "Cidade_653",
+                "Cidade_231",
+                "Cidade_232"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100061,
+            "encontrada": true,
+            "origem": "Cidade_123",
+            "destino": "Cidade_575",
+            "caminho": [
+                "Cidade_123",
+                "Cidade_124",
+                "Cidade_359",
+                "Cidade_986",
+                "Cidade_575"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100062,
+            "encontrada": true,
+            "origem": "Cidade_229",
+            "destino": "Cidade_498",
+            "caminho": [
+                "Cidade_229",
+                "Cidade_329",
+                "Cidade_565",
+                "Cidade_564",
+                "Cidade_498"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100063,
+            "encontrada": true,
+            "origem": "Cidade_264",
+            "destino": "Cidade_348",
+            "caminho": [
+                "Cidade_264",
+                "Cidade_263",
+                "Cidade_781",
+                "Cidade_194",
+                "Cidade_348"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100064,
+            "encontrada": true,
+            "origem": "Cidade_803",
+            "destino": "Cidade_363",
+            "caminho": [
+                "Cidade_803",
+                "Cidade_332",
+                "Cidade_363"
+            ],
+            "baldeacoes": 2
+        },
+        {
+            "id_encomenda": 100065,
+            "encontrada": true,
+            "origem": "Cidade_787",
+            "destino": "Cidade_47",
+            "caminho": [
+                "Cidade_787",
+                "Cidade_747",
+                "Cidade_976",
+                "Cidade_47"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100066,
+            "encontrada": true,
+            "origem": "Cidade_788",
+            "destino": "Cidade_898",
+            "caminho": [
+                "Cidade_788",
+                "Cidade_789",
+                "Cidade_871",
+                "Cidade_802",
+                "Cidade_898"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100067,
+            "encontrada": true,
+            "origem": "Cidade_570",
+            "destino": "Cidade_273",
+            "caminho": [
+                "Cidade_570",
+                "Cidade_568",
+                "Cidade_567",
+                "Cidade_20",
+                "Cidade_273"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100068,
+            "encontrada": true,
+            "origem": "Cidade_917",
+            "destino": "Cidade_154",
+            "caminho": [
+                "Cidade_917",
+                "Cidade_918",
+                "Cidade_381",
+                "Cidade_353",
+                "Cidade_154"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100069,
+            "encontrada": true,
+            "origem": "Cidade_873",
+            "destino": "Cidade_706",
+            "caminho": [
+                "Cidade_873",
+                "Cidade_872",
+                "Cidade_871",
+                "Cidade_706"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100070,
+            "encontrada": true,
+            "origem": "Cidade_894",
+            "destino": "Cidade_527",
+            "caminho": [
+                "Cidade_894",
+                "Cidade_895",
+                "Cidade_44",
+                "Cidade_810",
+                "Cidade_527"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100071,
+            "encontrada": true,
+            "origem": "Cidade_618",
+            "destino": "Cidade_685",
+            "caminho": [
+                "Cidade_618",
+                "Cidade_908",
+                "Cidade_594",
+                "Cidade_97",
+                "Cidade_685"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100072,
+            "encontrada": true,
+            "origem": "Cidade_106",
+            "destino": "Cidade_723",
+            "caminho": [
+                "Cidade_106",
+                "Cidade_904",
+                "Cidade_905",
+                "Cidade_723"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100073,
+            "encontrada": true,
+            "origem": "Cidade_51",
+            "destino": "Cidade_948",
+            "caminho": [
+                "Cidade_51",
+                "Cidade_805",
+                "Cidade_183",
+                "Cidade_948"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100074,
+            "encontrada": true,
+            "origem": "Cidade_968",
+            "destino": "Cidade_448",
+            "caminho": [
+                "Cidade_968",
+                "Cidade_792",
+                "Cidade_722",
+                "Cidade_723",
+                "Cidade_448"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100075,
+            "encontrada": true,
+            "origem": "Cidade_818",
+            "destino": "Cidade_468",
+            "caminho": [
+                "Cidade_818",
+                "Cidade_804",
+                "Cidade_161",
+                "Cidade_999",
+                "Cidade_468"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100076,
+            "encontrada": true,
+            "origem": "Cidade_985",
+            "destino": "Cidade_861",
+            "caminho": [
+                "Cidade_985",
+                "Cidade_254",
+                "Cidade_861"
+            ],
+            "baldeacoes": 2
+        },
+        {
+            "id_encomenda": 100077,
+            "encontrada": true,
+            "origem": "Cidade_773",
+            "destino": "Cidade_113",
+            "caminho": [
+                "Cidade_773",
+                "Cidade_147",
+                "Cidade_881",
+                "Cidade_112",
+                "Cidade_113"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100078,
+            "encontrada": true,
+            "origem": "Cidade_998",
+            "destino": "Cidade_108",
+            "caminho": [
+                "Cidade_998",
+                "Cidade_999",
+                "Cidade_468",
+                "Cidade_109",
+                "Cidade_108"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100079,
+            "encontrada": true,
+            "origem": "Cidade_800",
+            "destino": "Cidade_625",
+            "caminho": [
+                "Cidade_800",
+                "Cidade_958",
+                "Cidade_676",
+                "Cidade_625"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100080,
+            "encontrada": true,
+            "origem": "Cidade_624",
+            "destino": "Cidade_800",
+            "caminho": [
+                "Cidade_624",
+                "Cidade_495",
+                "Cidade_801",
+                "Cidade_800"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100081,
+            "encontrada": true,
+            "origem": "Cidade_878",
+            "destino": "Cidade_970",
+            "caminho": [
+                "Cidade_878",
+                "Cidade_579",
+                "Cidade_971",
+                "Cidade_970"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100082,
+            "encontrada": true,
+            "origem": "Cidade_104",
+            "destino": "Cidade_843",
+            "caminho": [
+                "Cidade_104",
+                "Cidade_630",
+                "Cidade_631",
+                "Cidade_843"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100083,
+            "encontrada": true,
+            "origem": "Cidade_575",
+            "destino": "Cidade_42",
+            "caminho": [
+                "Cidade_575",
+                "Cidade_491",
+                "Cidade_324",
+                "Cidade_42"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100084,
+            "encontrada": true,
+            "origem": "Cidade_519",
+            "destino": "Cidade_107",
+            "caminho": [
+                "Cidade_519",
+                "Cidade_360",
+                "Cidade_106",
+                "Cidade_107"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100085,
+            "encontrada": true,
+            "origem": "Cidade_171",
+            "destino": "Cidade_645",
+            "caminho": [
+                "Cidade_171",
+                "Cidade_170",
+                "Cidade_706",
+                "Cidade_705",
+                "Cidade_645"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100086,
+            "encontrada": true,
+            "origem": "Cidade_120",
+            "destino": "Cidade_891",
+            "caminho": [
+                "Cidade_120",
+                "Cidade_542",
+                "Cidade_543",
+                "Cidade_891"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100087,
+            "encontrada": true,
+            "origem": "Cidade_210",
+            "destino": "Cidade_932",
+            "caminho": [
+                "Cidade_210",
+                "Cidade_530",
+                "Cidade_529",
+                "Cidade_933",
+                "Cidade_932"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100088,
+            "encontrada": true,
+            "origem": "Cidade_370",
+            "destino": "Cidade_160",
+            "caminho": [
+                "Cidade_370",
+                "Cidade_161",
+                "Cidade_160"
+            ],
+            "baldeacoes": 2
+        },
+        {
+            "id_encomenda": 100089,
+            "encontrada": true,
+            "origem": "Cidade_745",
+            "destino": "Cidade_299",
+            "caminho": [
+                "Cidade_745",
+                "Cidade_466",
+                "Cidade_467",
+                "Cidade_33",
+                "Cidade_299"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100090,
+            "encontrada": true,
+            "origem": "Cidade_725",
+            "destino": "Cidade_452",
+            "caminho": [
+                "Cidade_725",
+                "Cidade_501",
+                "Cidade_804",
+                "Cidade_836",
+                "Cidade_452"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100091,
+            "encontrada": true,
+            "origem": "Cidade_780",
+            "destino": "Cidade_518",
+            "caminho": [
+                "Cidade_780",
+                "Cidade_26",
+                "Cidade_25",
+                "Cidade_518"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100092,
+            "encontrada": true,
+            "origem": "Cidade_510",
+            "destino": "Cidade_750",
+            "caminho": [
+                "Cidade_510",
+                "Cidade_900",
+                "Cidade_899",
+                "Cidade_750"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100093,
+            "encontrada": true,
+            "origem": "Cidade_891",
+            "destino": "Cidade_101",
+            "caminho": [
+                "Cidade_891",
+                "Cidade_890",
+                "Cidade_744",
+                "Cidade_30",
+                "Cidade_101"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100094,
+            "encontrada": true,
+            "origem": "Cidade_157",
+            "destino": "Cidade_662",
+            "caminho": [
+                "Cidade_157",
+                "Cidade_156",
+                "Cidade_302",
+                "Cidade_662"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100095,
+            "encontrada": true,
+            "origem": "Cidade_372",
+            "destino": "Cidade_342",
+            "caminho": [
+                "Cidade_372",
+                "Cidade_934",
+                "Cidade_343",
+                "Cidade_342"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100096,
+            "encontrada": true,
+            "origem": "Cidade_838",
+            "destino": "Cidade_141",
+            "caminho": [
+                "Cidade_838",
+                "Cidade_868",
+                "Cidade_893",
+                "Cidade_753",
+                "Cidade_141"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100097,
+            "encontrada": true,
+            "origem": "Cidade_125",
+            "destino": "Cidade_868",
+            "caminho": [
+                "Cidade_125",
+                "Cidade_110",
+                "Cidade_867",
+                "Cidade_868"
+            ],
+            "baldeacoes": 3
+        },
+        {
+            "id_encomenda": 100098,
+            "encontrada": true,
+            "origem": "Cidade_206",
+            "destino": "Cidade_449",
+            "caminho": [
+                "Cidade_206",
+                "Cidade_207",
+                "Cidade_535",
+                "Cidade_536",
+                "Cidade_449"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100099,
+            "encontrada": true,
+            "origem": "Cidade_992",
+            "destino": "Cidade_425",
+            "caminho": [
+                "Cidade_992",
+                "Cidade_454",
+                "Cidade_426",
+                "Cidade_425"
+            ],
+            "baldeacoes": 3
+        }
+    ],
+    "memoria": {
+        "vertices": 1000,
+        "arestas": 3978,
+        "bytes_estimados_matriz": 4000000,
+        "bytes_estimados_lista": 103472,
+        "diferenca_bytes": 3896528,
+        "estrutura_mais_eficiente": "Lista de Adjacência"
+    }
+}

@@ -1,0 +1,307 @@
+{
+    "status": "OK",
+    "cenario": "avancado",
+    "avl": {
+        "total_encomendas": 50,
+        "altura": 6,
+        "primeiros_ids_em_ordem": [
+            100000,
+            100001,
+            100002,
+            100003,
+            100004,
+            100005,
+            100006,
+            100007,
+            100008,
+            100009
+        ]
+    },
+    "grafo": {
+        "total_cidades": 15,
+        "total_rotas_arquivo": 14,
+        "total_arestas_unicas": 13,
+        "matriz_construida": true
+    },
+    "rotas_calculadas": [
+        {
+            "id_encomenda": 100000,
+            "encontrada": true,
+            "origem": "Cidade_0",
+            "destino": "Cidade_2",
+            "caminho": [
+                "Cidade_0",
+                "Cidade_2"
+            ],
+            "baldeacoes": 1
+        },
+        {
+            "id_encomenda": 100001,
+            "encontrada": true,
+            "origem": "Cidade_0",
+            "destino": "Cidade_1",
+            "caminho": [
+                "Cidade_0",
+                "Cidade_1"
+            ],
+            "baldeacoes": 1
+        },
+        {
+            "id_encomenda": 100002,
+            "encontrada": false,
+            "origem": "Cidade_0",
+            "destino": "Cidade_14",
+            "caminho": [],
+            "baldeacoes": -1
+        },
+        {
+            "id_encomenda": 100003,
+            "encontrada": true,
+            "origem": "Cidade_3",
+            "destino": "Cidade_7",
+            "caminho": [
+                "Cidade_3",
+                "Cidade_4",
+                "Cidade_5",
+                "Cidade_6",
+                "Cidade_7"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100004,
+            "encontrada": true,
+            "origem": "Cidade_9",
+            "destino": "Cidade_4",
+            "caminho": [
+                "Cidade_9",
+                "Cidade_8",
+                "Cidade_7",
+                "Cidade_6",
+                "Cidade_5",
+                "Cidade_4"
+            ],
+            "baldeacoes": 5
+        },
+        {
+            "id_encomenda": 100005,
+            "encontrada": false,
+            "origem": "Cidade_12",
+            "destino": "Cidade_13",
+            "caminho": [],
+            "baldeacoes": -1
+        },
+        {
+            "id_encomenda": 100006,
+            "encontrada": true,
+            "origem": "Cidade_0",
+            "destino": "Cidade_12",
+            "caminho": [
+                "Cidade_0",
+                "Cidade_2",
+                "Cidade_3",
+                "Cidade_4",
+                "Cidade_5",
+                "Cidade_6",
+                "Cidade_7",
+                "Cidade_8",
+                "Cidade_9",
+                "Cidade_10",
+                "Cidade_11",
+                "Cidade_12"
+            ],
+            "baldeacoes": 11
+        },
+        {
+            "id_encomenda": 100007,
+            "encontrada": true,
+            "origem": "Cidade_12",
+            "destino": "Cidade_2",
+            "caminho": [
+                "Cidade_12",
+                "Cidade_11",
+                "Cidade_10",
+                "Cidade_9",
+                "Cidade_8",
+                "Cidade_7",
+                "Cidade_6",
+                "Cidade_5",
+                "Cidade_4",
+                "Cidade_3",
+                "Cidade_2"
+            ],
+            "baldeacoes": 10
+        },
+        {
+            "id_encomenda": 100008,
+            "encontrada": true,
+            "origem": "Cidade_11",
+            "destino": "Cidade_6",
+            "caminho": [
+                "Cidade_11",
+                "Cidade_10",
+                "Cidade_9",
+                "Cidade_8",
+                "Cidade_7",
+                "Cidade_6"
+            ],
+            "baldeacoes": 5
+        },
+        {
+            "id_encomenda": 100009,
+            "encontrada": true,
+            "origem": "Cidade_5",
+            "destino": "Cidade_4",
+            "caminho": [
+                "Cidade_5",
+                "Cidade_4"
+            ],
+            "baldeacoes": 1
+        },
+        {
+            "id_encomenda": 100010,
+            "encontrada": true,
+            "origem": "Cidade_2",
+            "destino": "Cidade_3",
+            "caminho": [
+                "Cidade_2",
+                "Cidade_3"
+            ],
+            "baldeacoes": 1
+        },
+        {
+            "id_encomenda": 100011,
+            "encontrada": true,
+            "origem": "Cidade_12",
+            "destino": "Cidade_5",
+            "caminho": [
+                "Cidade_12",
+                "Cidade_11",
+                "Cidade_10",
+                "Cidade_9",
+                "Cidade_8",
+                "Cidade_7",
+                "Cidade_6",
+                "Cidade_5"
+            ],
+            "baldeacoes": 7
+        },
+        {
+            "id_encomenda": 100012,
+            "encontrada": false,
+            "origem": "Cidade_1",
+            "destino": "Cidade_14",
+            "caminho": [],
+            "baldeacoes": -1
+        },
+        {
+            "id_encomenda": 100013,
+            "encontrada": true,
+            "origem": "Cidade_6",
+            "destino": "Cidade_1",
+            "caminho": [
+                "Cidade_6",
+                "Cidade_5",
+                "Cidade_4",
+                "Cidade_3",
+                "Cidade_2",
+                "Cidade_1"
+            ],
+            "baldeacoes": 5
+        },
+        {
+            "id_encomenda": 100014,
+            "encontrada": false,
+            "origem": "Cidade_5",
+            "destino": "Cidade_13",
+            "caminho": [],
+            "baldeacoes": -1
+        },
+        {
+            "id_encomenda": 100015,
+            "encontrada": true,
+            "origem": "Cidade_5",
+            "destino": "Cidade_9",
+            "caminho": [
+                "Cidade_5",
+                "Cidade_6",
+                "Cidade_7",
+                "Cidade_8",
+                "Cidade_9"
+            ],
+            "baldeacoes": 4
+        },
+        {
+            "id_encomenda": 100016,
+            "encontrada": true,
+            "origem": "Cidade_4",
+            "destino": "Cidade_12",
+            "caminho": [
+                "Cidade_4",
+                "Cidade_5",
+                "Cidade_6",
+                "Cidade_7",
+                "Cidade_8",
+                "Cidade_9",
+                "Cidade_10",
+                "Cidade_11",
+                "Cidade_12"
+            ],
+            "baldeacoes": 8
+        },
+        {
+            "id_encomenda": 100017,
+            "encontrada": true,
+            "origem": "Cidade_0",
+            "destino": "Cidade_11",
+            "caminho": [
+                "Cidade_0",
+                "Cidade_2",
+                "Cidade_3",
+                "Cidade_4",
+                "Cidade_5",
+                "Cidade_6",
+                "Cidade_7",
+                "Cidade_8",
+                "Cidade_9",
+                "Cidade_10",
+                "Cidade_11"
+            ],
+            "baldeacoes": 10
+        },
+        {
+            "id_encomenda": 100018,
+            "encontrada": true,
+            "origem": "Cidade_7",
+            "destino": "Cidade_8",
+            "caminho": [
+                "Cidade_7",
+                "Cidade_8"
+            ],
+            "baldeacoes": 1
+        },
+        {
+            "id_encomenda": 100019,
+            "encontrada": true,
+            "origem": "Cidade_1",
+            "destino": "Cidade_6",
+            "caminho": [
+                "Cidade_1",
+                "Cidade_2",
+                "Cidade_3",
+                "Cidade_4",
+                "Cidade_5",
+                "Cidade_6"
+            ],
+            "baldeacoes": 5
+        }
+    ],
+    "memoria": {
+        "vertices": 15,
+        "arestas": 13,
+        "bytes_estimados_matriz": 900,
+        "bytes_estimados_lista": 432,
+        "diferenca_bytes": 468,
+        "estrutura_mais_eficiente": "Lista de Adjacência"
+    }
+}

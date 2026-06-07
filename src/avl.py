@@ -1,4 +1,4 @@
-﻿class NoAVL:
+class NoAVL:
     def __init__(self, valor, encomenda=None):
         self.valor = valor
         self.encomenda = encomenda
@@ -182,6 +182,26 @@ class ArvoreAVL:
 
     def tamanho(self):
         return len(self.listar())
+
+
+    def altura(self):
+        return self._altura(self.raiz)
+
+    def primeiros_ids(self, quantidade):
+        resultado = []
+        self._coletar_primeiros(self.raiz, resultado, quantidade)
+        return resultado
+
+    def _coletar_primeiros(self, no, resultado, quantidade):
+        if no is None or len(resultado) >= quantidade:
+            return
+        self._coletar_primeiros(no.esquerda, resultado, quantidade)
+        if len(resultado) < quantidade:
+            resultado.append(no.valor)
+        self._coletar_primeiros(no.direita, resultado, quantidade)
+
+    def total_encomendas(self):
+        return self.tamanho()
 
     def imprimir(self):
         ids = self.listar()

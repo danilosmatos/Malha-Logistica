@@ -1,2 +1,4 @@
-﻿data/input_estresse.json
-!data/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/

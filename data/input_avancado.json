@@ -1,9 +1,12 @@
 {
     "metadata": {
         "cenario": "avancado",
+        "seed": 42,
         "total_encomendas": 50,
         "total_cidades": 15,
-        "total_rotas": 14
+        "total_rotas": 14,
+        "total_consultas": 20,
+        "grafo_direcionado": false
     },
     "cidades": [
         "Cidade_0",
@@ -24,151 +27,23 @@
     ],
     "rotas": [
         {
-            "origem": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
-            "destino": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
+            "origem": "Cidade_0",
+            "destino": "Cidade_1",
             "distancia": 5
         },
         {
-            "origem": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
-            "destino": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
+            "origem": "Cidade_1",
+            "destino": "Cidade_2",
             "distancia": 5
         },
         {
-            "origem": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
-            "destino": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
+            "origem": "Cidade_2",
+            "destino": "Cidade_0",
             "distancia": 5
         },
         {
-            "origem": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
-            "destino": [
-                "Cidade_0",
-                "Cidade_1",
-                "Cidade_2",
-                "Cidade_3",
-                "Cidade_4",
-                "Cidade_5",
-                "Cidade_6",
-                "Cidade_7",
-                "Cidade_8",
-                "Cidade_9",
-                "Cidade_10",
-                "Cidade_11",
-                "Cidade_12",
-                "Cidade_13",
-                "Cidade_14"
-            ],
+            "origem": "Cidade_0",
+            "destino": "Cidade_1",
             "distancia": 5
         },
         {
@@ -225,253 +100,275 @@
     "encomendas": [
         {
             "id": 100000,
-            "cidade_origem": "Cidade_8",
-            "cidade_destino": "Cidade_13"
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_2"
         },
         {
             "id": 100001,
-            "cidade_origem": "Cidade_4",
-            "cidade_destino": "Cidade_13"
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_1"
         },
         {
             "id": 100002,
-            "cidade_origem": "Cidade_4",
-            "cidade_destino": "Cidade_3"
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_14"
         },
         {
             "id": 100003,
-            "cidade_origem": "Cidade_5",
-            "cidade_destino": "Cidade_11"
+            "cidade_origem": "Cidade_3",
+            "cidade_destino": "Cidade_7"
         },
         {
             "id": 100004,
-            "cidade_origem": "Cidade_0",
-            "cidade_destino": "Cidade_6"
+            "cidade_origem": "Cidade_9",
+            "cidade_destino": "Cidade_4"
         },
         {
             "id": 100005,
             "cidade_origem": "Cidade_12",
-            "cidade_destino": "Cidade_0"
+            "cidade_destino": "Cidade_13"
         },
         {
             "id": 100006,
-            "cidade_origem": "Cidade_8",
-            "cidade_destino": "Cidade_7"
+            "cidade_origem": "Cidade_0",
+            "cidade_destino": "Cidade_12"
         },
         {
             "id": 100007,
             "cidade_origem": "Cidade_12",
-            "cidade_destino": "Cidade_9"
+            "cidade_destino": "Cidade_2"
         },
         {
             "id": 100008,
+            "cidade_origem": "Cidade_11",
+            "cidade_destino": "Cidade_6"
+        },
+        {
+            "id": 100009,
+            "cidade_origem": "Cidade_5",
+            "cidade_destino": "Cidade_4"
+        },
+        {
+            "id": 100010,
+            "cidade_origem": "Cidade_2",
+            "cidade_destino": "Cidade_3"
+        },
+        {
+            "id": 100011,
+            "cidade_origem": "Cidade_12",
+            "cidade_destino": "Cidade_5"
+        },
+        {
+            "id": 100012,
+            "cidade_origem": "Cidade_1",
+            "cidade_destino": "Cidade_14"
+        },
+        {
+            "id": 100013,
+            "cidade_origem": "Cidade_6",
+            "cidade_destino": "Cidade_1"
+        },
+        {
+            "id": 100014,
             "cidade_origem": "Cidade_5",
             "cidade_destino": "Cidade_13"
         },
         {
-            "id": 100009,
-            "cidade_origem": "Cidade_8",
-            "cidade_destino": "Cidade_14"
-        },
-        {
-            "id": 100010,
-            "cidade_origem": "Cidade_11",
-            "cidade_destino": "Cidade_4"
-        },
-        {
-            "id": 100011,
-            "cidade_origem": "Cidade_10",
-            "cidade_destino": "Cidade_3"
-        },
-        {
-            "id": 100012,
-            "cidade_origem": "Cidade_7",
-            "cidade_destino": "Cidade_13"
-        },
-        {
-            "id": 100013,
-            "cidade_origem": "Cidade_0",
-            "cidade_destino": "Cidade_12"
-        },
-        {
-            "id": 100014,
-            "cidade_origem": "Cidade_13",
-            "cidade_destino": "Cidade_2"
-        },
-        {
             "id": 100015,
-            "cidade_origem": "Cidade_7",
-            "cidade_destino": "Cidade_13"
+            "cidade_origem": "Cidade_5",
+            "cidade_destino": "Cidade_9"
         },
         {
             "id": 100016,
-            "cidade_origem": "Cidade_6",
-            "cidade_destino": "Cidade_3"
+            "cidade_origem": "Cidade_4",
+            "cidade_destino": "Cidade_12"
         },
         {
             "id": 100017,
-            "cidade_origem": "Cidade_8",
-            "cidade_destino": "Cidade_1"
-        },
-        {
-            "id": 100018,
-            "cidade_origem": "Cidade_14",
-            "cidade_destino": "Cidade_12"
-        },
-        {
-            "id": 100019,
-            "cidade_origem": "Cidade_4",
+            "cidade_origem": "Cidade_0",
             "cidade_destino": "Cidade_11"
         },
         {
-            "id": 100020,
-            "cidade_origem": "Cidade_9",
-            "cidade_destino": "Cidade_14"
-        },
-        {
-            "id": 100021,
-            "cidade_origem": "Cidade_10",
-            "cidade_destino": "Cidade_2"
-        },
-        {
-            "id": 100022,
-            "cidade_origem": "Cidade_2",
+            "id": 100018,
+            "cidade_origem": "Cidade_7",
             "cidade_destino": "Cidade_8"
         },
         {
-            "id": 100023,
-            "cidade_origem": "Cidade_6",
-            "cidade_destino": "Cidade_7"
-        },
-        {
-            "id": 100024,
-            "cidade_origem": "Cidade_6",
-            "cidade_destino": "Cidade_5"
-        },
-        {
-            "id": 100025,
-            "cidade_origem": "Cidade_2",
+            "id": 100019,
+            "cidade_origem": "Cidade_1",
             "cidade_destino": "Cidade_6"
         },
         {
-            "id": 100026,
-            "cidade_origem": "Cidade_4",
-            "cidade_destino": "Cidade_10"
-        },
-        {
-            "id": 100027,
-            "cidade_origem": "Cidade_12",
+            "id": 100020,
+            "cidade_origem": "Cidade_1",
             "cidade_destino": "Cidade_8"
         },
         {
-            "id": 100028,
-            "cidade_origem": "Cidade_7",
+            "id": 100021,
+            "cidade_origem": "Cidade_4",
             "cidade_destino": "Cidade_13"
         },
         {
-            "id": 100029,
+            "id": 100022,
             "cidade_origem": "Cidade_10",
-            "cidade_destino": "Cidade_14"
+            "cidade_destino": "Cidade_9"
         },
         {
-            "id": 100030,
-            "cidade_origem": "Cidade_4",
+            "id": 100023,
+            "cidade_origem": "Cidade_14",
+            "cidade_destino": "Cidade_13"
+        },
+        {
+            "id": 100024,
+            "cidade_origem": "Cidade_5",
+            "cidade_destino": "Cidade_9"
+        },
+        {
+            "id": 100025,
+            "cidade_origem": "Cidade_3",
+            "cidade_destino": "Cidade_11"
+        },
+        {
+            "id": 100026,
+            "cidade_origem": "Cidade_1",
             "cidade_destino": "Cidade_0"
         },
         {
-            "id": 100031,
+            "id": 100027,
+            "cidade_origem": "Cidade_10",
+            "cidade_destino": "Cidade_3"
+        },
+        {
+            "id": 100028,
+            "cidade_origem": "Cidade_12",
+            "cidade_destino": "Cidade_4"
+        },
+        {
+            "id": 100029,
+            "cidade_origem": "Cidade_1",
+            "cidade_destino": "Cidade_13"
+        },
+        {
+            "id": 100030,
             "cidade_origem": "Cidade_3",
-            "cidade_destino": "Cidade_12"
+            "cidade_destino": "Cidade_13"
+        },
+        {
+            "id": 100031,
+            "cidade_origem": "Cidade_1",
+            "cidade_destino": "Cidade_6"
         },
         {
             "id": 100032,
-            "cidade_origem": "Cidade_9",
+            "cidade_origem": "Cidade_4",
             "cidade_destino": "Cidade_7"
         },
         {
             "id": 100033,
-            "cidade_origem": "Cidade_6",
-            "cidade_destino": "Cidade_11"
-        },
-        {
-            "id": 100034,
-            "cidade_origem": "Cidade_7",
-            "cidade_destino": "Cidade_1"
-        },
-        {
-            "id": 100035,
-            "cidade_origem": "Cidade_13",
-            "cidade_destino": "Cidade_6"
-        },
-        {
-            "id": 100036,
-            "cidade_origem": "Cidade_4",
+            "cidade_origem": "Cidade_10",
             "cidade_destino": "Cidade_13"
         },
         {
+            "id": 100034,
+            "cidade_origem": "Cidade_5",
+            "cidade_destino": "Cidade_2"
+        },
+        {
+            "id": 100035,
+            "cidade_origem": "Cidade_5",
+            "cidade_destino": "Cidade_14"
+        },
+        {
+            "id": 100036,
+            "cidade_origem": "Cidade_3",
+            "cidade_destino": "Cidade_10"
+        },
+        {
             "id": 100037,
-            "cidade_origem": "Cidade_9",
-            "cidade_destino": "Cidade_4"
+            "cidade_origem": "Cidade_4",
+            "cidade_destino": "Cidade_11"
         },
         {
             "id": 100038,
             "cidade_origem": "Cidade_14",
-            "cidade_destino": "Cidade_4"
+            "cidade_destino": "Cidade_10"
         },
         {
             "id": 100039,
-            "cidade_origem": "Cidade_1",
-            "cidade_destino": "Cidade_2"
-        },
-        {
-            "id": 100040,
-            "cidade_origem": "Cidade_0",
-            "cidade_destino": "Cidade_12"
-        },
-        {
-            "id": 100041,
-            "cidade_origem": "Cidade_9",
-            "cidade_destino": "Cidade_6"
-        },
-        {
-            "id": 100042,
-            "cidade_origem": "Cidade_14",
-            "cidade_destino": "Cidade_9"
-        },
-        {
-            "id": 100043,
-            "cidade_origem": "Cidade_8",
-            "cidade_destino": "Cidade_12"
-        },
-        {
-            "id": 100044,
-            "cidade_origem": "Cidade_14",
+            "cidade_origem": "Cidade_10",
             "cidade_destino": "Cidade_1"
         },
         {
-            "id": 100045,
-            "cidade_origem": "Cidade_10",
+            "id": 100040,
+            "cidade_origem": "Cidade_9",
+            "cidade_destino": "Cidade_10"
+        },
+        {
+            "id": 100041,
+            "cidade_origem": "Cidade_2",
             "cidade_destino": "Cidade_8"
         },
         {
-            "id": 100046,
-            "cidade_origem": "Cidade_1",
-            "cidade_destino": "Cidade_12"
+            "id": 100042,
+            "cidade_origem": "Cidade_11",
+            "cidade_destino": "Cidade_3"
         },
         {
-            "id": 100047,
-            "cidade_origem": "Cidade_12",
-            "cidade_destino": "Cidade_13"
-        },
-        {
-            "id": 100048,
-            "cidade_origem": "Cidade_4",
+            "id": 100043,
+            "cidade_origem": "Cidade_2",
             "cidade_destino": "Cidade_7"
         },
         {
+            "id": 100044,
+            "cidade_origem": "Cidade_6",
+            "cidade_destino": "Cidade_4"
+        },
+        {
+            "id": 100045,
+            "cidade_origem": "Cidade_14",
+            "cidade_destino": "Cidade_10"
+        },
+        {
+            "id": 100046,
+            "cidade_origem": "Cidade_11",
+            "cidade_destino": "Cidade_8"
+        },
+        {
+            "id": 100047,
+            "cidade_origem": "Cidade_3",
+            "cidade_destino": "Cidade_10"
+        },
+        {
+            "id": 100048,
+            "cidade_origem": "Cidade_5",
+            "cidade_destino": "Cidade_13"
+        },
+        {
             "id": 100049,
-            "cidade_origem": "Cidade_7",
-            "cidade_destino": "Cidade_9"
+            "cidade_origem": "Cidade_12",
+            "cidade_destino": "Cidade_14"
         }
+    ],
+    "consultas_rotas": [
+        100000,
+        100001,
+        100002,
+        100003,
+        100004,
+        100005,
+        100006,
+        100007,
+        100008,
+        100009,
+        100010,
+        100011,
+        100012,
+        100013,
+        100014,
+        100015,
+        100016,
+        100017,
+        100018,
+        100019
     ]
 }
