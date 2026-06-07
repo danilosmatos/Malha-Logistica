@@ -19,4 +19,4 @@ def calcular_estimativa_ram(num_vertices, num_arestas):
         "estrutura_mais_eficiente": "Lista de Adjacência"
         if ram_lista < ram_matriz
         else "Matriz de Adjacência",
-    }﻿
+    }

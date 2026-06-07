@@ -2,61 +2,84 @@ import json
 import os
 import random
 
+# Seed fixa para determinismo
+SEED_PADRAO = 42
 
-def gerar_cenario(num_encomendas, num_cidades, tipo_cenario):
-    """Gera dados dinâmicos vinculando encomendas e rotas sem análise de memória."""
-    # 1. Gerar as cidades do cenário
+
+def gerar_cenario(num_encomendas, num_cidades, tipo_cenario, total_consultas=20):
+    """Gera os dados de entrada do Projeto 5.
     cidades = [f"Cidade_{i}" for i in range(num_cidades)]
     rotas = []
-    
+    arestas_existentes = set()
+    # Correção Danilo; Essencialmente mudando o append simples para uma função que checa se a rota é inválida; 
+    def adicionar_rota(origem, destino, distancia):
+        if origem == destino:
+            return
+        chave = tuple(sorted((origem, destino)))
+        rotas.append({"origem": origem, "destino": destino, "distancia": distancia})
+        arestas_existentes.add(chave)
 
-    # 2. Construir as rotas com base no tipo de cenário (Estrutura do Grafo)
     if tipo_cenario == "basico":
-        # Conexão linear simples para validar lógica inicial (BFS)
+        # Conexão linear simples para validar a lógica central do BFS.
         for i in range(num_cidades - 1):
-            rotas.append(
-                {"origem": cidades[i], "destino": cidades[i + 1], "distancia": 10}
-            )
+            adicionar_rota(cidades[i], cidades[i + 1], 10)
 
     elif tipo_cenario == "avancado":
-        # Inserção de Edge Cases (Ciclos, duplicados e nós isolados)
-        # Ciclo fechado (Cidade 0 -> 1 -> 2 -> 0)
-        rotas.append({"origem": cidades, "destino": cidades, "distancia": 5})
-        rotas.append({"origem": cidades, "destino": cidades, "distancia": 5})
-        rotas.append({"origem": cidades, "destino": cidades, "distancia": 5})
+        # Ciclo: Cidade_0 -> Cidade_1 -> Cidade_2 -> Cidade_0.
+        adicionar_rota(cidades[0], cidades[1], 5)
+        adicionar_rota(cidades[1], cidades[2], 5)
+        adicionar_rota(cidades[2], cidades[0], 5)
 
-        # Rota duplicada (Dados repetidos)
-        rotas.append({"origem": cidades, "destino": cidades, "distancia": 5})
+        # Rota duplicada proposital para validar tratamento de dados repetidos.
+        rotas.append({"origem": cidades[0], "destino": cidades[1], "distancia": 5})
 
-        # Componentes desconectados: conecta até a antepenúltima cidade, isolando as últimas
+        # Componente principal conectado até a antepenúltima cidade.
+        # As duas últimas cidades ficam isoladas para testar rotas impossíveis.
         for i in range(2, num_cidades - 3):
-            rotas.append(
-                {"origem": cidades[i], "destino": cidades[i + 1], "distancia": 15}
-            )
+            adicionar_rota(cidades[i], cidades[i + 1], 15)
 
     elif tipo_cenario == "estresse":
-        # Grafo esparso massivo simulando uma malha logística real
-        arestas_existentes = set()
-        
-        for i in range(num_cidades):
-            vizinhos_alvo = random.sample(
-                range(num_cidades), k=random.randint(2, 3)
-            )
-            for v in vizinhos_alvo:
-                if i != v and (i, v) not in arestas_existentes:
-                    rotas.append(
-                        {
-                            "origem": cidades[i],
-                            "destino": cidades[v],
-                            "distancia": random.randint(10, 150),
-                        }
-                    )
-                    arestas_existentes.add((i, v))
+        # Garante conectividade mínima com uma linha principal.
+        for i in range(num_cidades - 1):
+            adicionar_rota(cidades[i], cidades[i + 1], random.randint(10, 80))
 
-    # 3. Gerar as encomendas vinculando-as a cidades reais de origem e destino
+        # Adiciona atalhos aleatórios para simular uma malha esparsa.
+        tentativas = num_cidades * 3
+        for _ in range(tentativas):
+            origem, destino = random.sample(cidades, k=2)
+            chave = tuple(sorted((origem, destino)))
+            if chave not in arestas_existentes:
+                adicionar_rota(origem, destino, random.randint(10, 150))
+
+    else:
+        raise ValueError(f"Cenário desconhecido: {tipo_cenario}")
+
     encomendas = []
-    for i in range(num_encomendas):
-        # IDs crescentes para forçar pior caso/rotações automáticas na Árvore AVL
+
+    # Casos controlados no avançado para garantir ciclo, duplicata e desconexão.
+    if tipo_cenario == "avancado" and num_encomendas >= 3:
+        encomendas.extend(
+            [
+                {
+                    "id": 100000,
+                    "cidade_origem": cidades[0],
+                    "cidade_destino": cidades[2],
+                },
+                {
+                    "id": 100001,
+                    "cidade_origem": cidades[0],
+                    "cidade_destino": cidades[1],
+                },
+                {
+                    "id": 100002,
+                    "cidade_origem": cidades[0],
+                    "cidade_destino": cidades[-1],
+                },
+            ]
+        )
+
+    inicio = len(encomendas)
+    for i in range(inicio, num_encomendas):
         id_encomenda = 100000 + i
 
         # Sorteia origem e destino garantindo que sejam cidades diferentes
@@ -70,51 +93,67 @@ def gerar_cenario(num_encomendas, num_cidades, tipo_cenario):
             }
         )
 
+    consultas_rotas = [encomenda["id"] for encomenda in encomendas[:total_consultas]]
+
     return {
         "metadata": {
             "cenario": tipo_cenario,
+            "seed": SEED_PADRAO,
             "total_encomendas": len(encomendas),
             "total_cidades": len(cidades),
             "total_rotas": len(rotas),
+            "total_consultas": len(consultas_rotas),
+            "grafo_direcionado": False,
         },
         "cidades": cidades,
         "rotas": rotas,
         "encomendas": encomendas,
+        "consultas_rotas": consultas_rotas,
     }
 
 
 def salvar_json(dados, nome_arquivo):
-    """Salva o arquivo final estruturado no diretório /data."""
+    """Salva o arquivo estruturado no diretório /data."""
     os.makedirs("data", exist_ok=True)
     caminho = os.path.join("data", nome_arquivo)
-    with open(caminho, "w", encoding="utf-8") as f:
-        json.dump(dados, f, indent=4, ensure_ascii=False)
-    print(f"✔️ Arquivo '{caminho}' gerado com sucesso.")
+    with open(caminho, "w", encoding="utf-8") as arquivo:
+        json.dump(dados, arquivo, indent=4, ensure_ascii=False)
+    print(f"Arquivo gerado: {caminho}")
 
 
 if __name__ == "__main__":
-    print("=== ENGENHARIA DE DADOS: GERADOR DE CENÁRIOS (PROJETO 5) ===")
+    random.seed(SEED_PADRAO)
 
-    # 1. Cenário Básico
+    print("=== Gerador de dados - Projeto 5: Malha Logística ===")
+
     salvar_json(
-        gerar_cenario(num_encomendas=10, num_cidades=5, tipo_cenario="basico"),
+        gerar_cenario(
+            num_encomendas=10,
+            num_cidades=5,
+            tipo_cenario="basico",
+            total_consultas=10,
+        ),
         "input_basico.json",
     )
 
-    # 2. Cenário Avançado (Foco em Edge Cases)
     salvar_json(
         gerar_cenario(
-            num_encomendas=50, num_cidades=15, tipo_cenario="avancado"
+            num_encomendas=50,
+            num_cidades=15,
+            tipo_cenario="avancado",
+            total_consultas=20,
         ),
         "input_avancado.json",
     )
 
-    # 3. Cenário de Estresse (Meta estrita do anexo: 50.000 encomendas)
     salvar_json(
         gerar_cenario(
-            num_encomendas=50000, num_cidades=10000, tipo_cenario="estresse"
+            num_encomendas=50000,
+            num_cidades=1000,
+            tipo_cenario="estresse",
+            total_consultas=100,
         ),
         "input_estresse.json",
     )
 
-    print("\n[SUCESSO] Todos os arquivos foram gerados no diretório /data.")
+    print("Todos os arquivos foram gerados em /data.")
